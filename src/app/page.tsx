@@ -9,8 +9,6 @@ import {
   FaBriefcase,
   FaMapMarkerAlt,
   FaEnvelope,
-  FaBars,
-  FaTimes,
 } from "react-icons/fa";
 import techStack from "@/lib/tech-stack";
 import { projects } from "@/lib/projects";
