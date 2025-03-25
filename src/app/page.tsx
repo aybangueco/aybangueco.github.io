@@ -1,102 +1,192 @@
-import Image from "next/image";
+import React from "react";
+import Link from "next/link";
+import {
+  FaCode,
+  FaPhoneSquare,
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaUser,
+  FaBriefcase,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaSuitcase,
+} from "react-icons/fa";
+import techStack from "@/lib/tech-stack";
+import { projects } from "@/lib/projects";
 
-export default function Home() {
+export default function RevampedPortfolio() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+      <div className="container mx-auto px-4 py-16 lg:px-24 grid lg:grid-cols-2 gap-12">
+        {/* Left Side: Profile & Contact */}
+        <div className="space-y-8 lg:sticky lg:top-12 self-start">
+          <div className="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+            <div className="flex items-center space-x-6 mb-6">
+              <div className="w-24 h-24 rounded-full bg-gray-700 flex items-center justify-center">
+                <FaUser size={48} className="text-gray-400" />
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-white">
+                  Justine Ivan Gueco
+                </h1>
+                <p className="text-gray-400">Software Developer</p>
+              </div>
+            </div>
+            <p className="text-gray-300 mb-6">
+              I specialize in building applications from scratch.
+            </p>
+            <div className="flex space-x-4">
+              <Link
+                href="https://github.com/w4keupvan"
+                target="_blank"
+                className="hover:bg-gray-700 p-2 rounded-full transition"
+              >
+                <FaGithub
+                  className="text-gray-300 hover:text-white"
+                  size={24}
+                />
+              </Link>
+              <Link
+                href="https://linkedin.com/in/justine-ivan-gueco"
+                target="_blank"
+                className="hover:bg-gray-700 p-2 rounded-full transition"
+              >
+                <FaLinkedin
+                  className="text-gray-300 hover:text-white"
+                  size={24}
+                />
+              </Link>
+              <Link
+                href="https://instagram.com/aybancaughtin4k"
+                target="_blank"
+                className="hover:bg-gray-700 p-2 rounded-full transition"
+              >
+                <FaInstagram
+                  className="text-gray-300 hover:text-white"
+                  size={24}
+                />
+              </Link>
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          {/* Contact Card */}
+          <div className="bg-gray-800 rounded-2xl p-6 shadow-2xl">
+            <h2 className="text-xl font-bold mb-4 flex items-center">
+              <FaMapMarkerAlt className="mr-2" /> Location
+            </h2>
+            <p className="text-gray-400">Bataan, Philippines</p>
+
+            <div className="border-t border-gray-700 my-4"></div>
+
+            <h2 className="text-xl font-bold mb-4 flex items-center">
+              <FaEnvelope className="mr-2" /> Contact
+            </h2>
+            <p className="text-gray-400">
+              Open for opportunities and collaboration. Don't hesitate to reach
+              out to me at my LinkedIn.
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        {/* Right Side: Content */}
+        <div className="space-y-12">
+          {/* About Section */}
+          <section className="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+            <h2 className="text-2xl font-bold mb-6 flex items-center">
+              <FaUser className="mr-3" /> About Me
+            </h2>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                A self motivated aspiring software engineer based from the
+                Philippines, specializing in building web and mobile
+                applications from scratch. I continuously refine my skills by
+                developing personal projects and self studying during my free
+                time.
+              </p>
+              <p>
+                With a strong foundation in full-stack and mobile development, I
+                adapt to different environments, embrace challenges, and eagerly
+                learn new things every day to stay up-to-date with industry
+                trends and standards.
+              </p>
+            </div>
+          </section>
+
+          {/* Tech Skills */}
+          <section className="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+            <h2 className="text-2xl font-bold mb-6 flex items-center">
+              <FaCode className="mr-3" /> Technical Skills
+            </h2>
+            <div className="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
+              {techStack.map((tech, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-700 rounded-lg p-4 flex flex-col items-center hover:scale-105 transition"
+                >
+                  <img src={tech.src} alt={tech.alt} className="w-8 h-8 mb-2" />
+                  <span className="text-sm text-gray-300  text-center">
+                    {tech.alt}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Projects */}
+          <section className="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+            <h2 className="text-2xl font-bold mb-6 flex items-center">
+              <FaBriefcase className="mr-3" /> Featured Projects
+            </h2>
+            <div className="space-y-6">
+              {projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition"
+                >
+                  <h3 className="text-xl font-semibold mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="bg-gray-800 text-xs px-2 py-1 rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-4">
+                    <Link
+                      href={project.repo_url}
+                      target="_blank"
+                      className="flex items-center text-sm hover:text-white"
+                    >
+                      <FaGithub className="mr-2" /> GitHub
+                    </Link>
+                    <Link
+                      href={project.live_preview || ""}
+                      target="_blank"
+                      className="flex items-center text-sm hover:text-white"
+                    >
+                      <FaPhoneSquare className="mr-2" /> Live Demo
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="text-center py-6 text-gray-500">
+        <p>
+          © {new Date().getFullYear()} Justine Ivan Gueco. Built with Next.js &
+          Tailwind CSS
+        </p>
       </footer>
     </div>
   );
