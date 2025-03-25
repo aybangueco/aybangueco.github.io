@@ -10,10 +10,10 @@ import {
   FaBriefcase,
   FaMapMarkerAlt,
   FaEnvelope,
-  FaSuitcase,
 } from "react-icons/fa";
 import techStack from "@/lib/tech-stack";
 import { projects } from "@/lib/projects";
+import Image from "next/image";
 
 export default function RevampedPortfolio() {
   return (
@@ -83,8 +83,8 @@ export default function RevampedPortfolio() {
               <FaEnvelope className="mr-2" /> Contact
             </h2>
             <p className="text-gray-400">
-              Open for opportunities and collaboration. Don't hesitate to reach
-              out to me at my LinkedIn.
+              Open for opportunities and collaboration. Don&apos;t hesitate to
+              reach out to me at my LinkedIn.
             </p>
           </div>
         </div>
@@ -124,7 +124,11 @@ export default function RevampedPortfolio() {
                   key={index}
                   className="bg-gray-700 rounded-lg p-4 flex flex-col items-center hover:scale-105 transition"
                 >
-                  <img src={tech.src} alt={tech.alt} className="w-8 h-8 mb-2" />
+                  <Image
+                    src={tech.src}
+                    alt={tech.alt}
+                    className="w-8 h-8 mb-2"
+                  />
                   <span className="text-sm text-gray-300  text-center">
                     {tech.alt}
                   </span>
