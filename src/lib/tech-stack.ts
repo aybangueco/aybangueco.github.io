@@ -57,11 +57,15 @@ const techStack: Array<{ src: string; alt: string }> = [
   },
   {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Pnpm-Dark.svg",
-    alt: "PNPM",
+    alt: "Pnpm",
   },
   {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Git.svg",
     alt: "Git",
+  },
+  {
+    src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/GithubActions-Dark.svg",
+    alt: "CI/CD",
   },
   {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Docker.svg",
@@ -74,10 +78,6 @@ const techStack: Array<{ src: string; alt: string }> = [
   {
     src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Postman.svg",
     alt: "Postman",
-  },
-  {
-    src: "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Arch-Dark.svg",
-    alt: "Arch",
   },
 ];
 
