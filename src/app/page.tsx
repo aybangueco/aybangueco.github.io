@@ -41,14 +41,14 @@ export default function Home() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com/w4keupvan"
+                href="https://github.com/soapermanwun"
                 target="_blank"
                 className="hover:bg-[#2A2A2A] p-2 rounded-full transition"
               >
                 <FaGithub className=" hover:text-slate-200" size={24} />
               </Link>
               <Link
-                href="https://linkedin.com/in/justine-ivan-gueco"
+                href="https://linkedin.com/in/justineivangueco"
                 target="_blank"
                 className="hover:bg-[#2A2A2A] p-2 rounded-full transition"
               >
