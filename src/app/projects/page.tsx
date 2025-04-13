@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { projects } from "@/lib/projects";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
@@ -35,7 +36,9 @@ export default function Projects() {
             <Card key={index} className="overflow-hidden">
               <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/4 h-48 overflow-hidden">
-                  <img
+                  <Image
+                    width={1000}
+                    height={1000}
                     src={project.url}
                     alt={project.title}
                     className="w-full h-full object-cover p-3"

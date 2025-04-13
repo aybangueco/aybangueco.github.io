@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
