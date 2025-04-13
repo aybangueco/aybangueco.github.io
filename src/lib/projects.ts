@@ -1,42 +1,55 @@
-export type ProjectsProps = {
-  url: string;
+type ProjectsType = {
   title: string;
   description: string;
-  technologies: string[];
-  repo_url: string;
-  live_preview?: string;
+  tech: Array<string>;
+  image: string;
+  github: string;
+  live?: string;
 };
 
-export const projects: Array<ProjectsProps> = [
+const projects: Array<ProjectsType> = [
   {
-    url: "/images/projects/plus-ultra.jpg",
-    title: "Plus Ultra: Workout Tracker and Equipment Scanner",
+    title: "Plus Ultra",
     description:
-      "A capstone project for our beneficiary Muscle Mechanic Fitness Gym. A mobile application that identifies workout equipments, helps users to track their progress, and get a personalized workout plan from trainers. ",
-    technologies: [
-      "TypeScript",
+      "Developed a full stack fitness mobile application, that aims to help new gym goers on their fitness journey.",
+    tech: [
       "React Native",
       "Expo",
-      "Zustand",
+      "TypeScript",
+      "Express",
       "Node JS",
-      "Express JS",
       "PostgreSQL",
       "SQLite",
-      "Prisma",
-      "Drizzle",
-      "Vitest",
-      "Docker",
     ],
-    repo_url: "https://www.github.com/bangueco/plus-ultra",
-    live_preview: "https://github.com/bangueco/plus-ultra/releases/tag/v1.2.13",
+    image: "/images/projects/plus-ultra.jpg",
+    github: "https://www.github.com/bangueco/plus-ultra",
+    live: "https://github.com/bangueco/plus-ultra/releases/tag/v1.2.13",
   },
   {
-    url: "/images/projects/ojt-hours-tracker.png",
     title: "OJT Hours Tracker",
     description:
-      "A simple web application that i developed during my internship to help my fellow classmates/students on tracking their own rendered hours in OJT.",
-    technologies: ["Next.JS", "Tailwind CSS", "Supabase"],
-    repo_url: "https://github.com/soapermanwun/ojt-hours-tracker",
-    live_preview: "https://ojt-hours-tracker.vercel.app/",
+      "Developed a simple web application to help my fellow students/classmates on tracking their rendered hours on our OJT.",
+    tech: ["Next.JS", "TypeScript", "Tailwind CSS", "Supabase"],
+    image: "/images/projects/ojt-hours-tracker.png",
+    github: "https://github.com/soapermanwun/ojt-hours-tracker",
+    live: "https://ojt-hours-tracker.vercel.app/",
+  },
+  {
+    title: "Gym Ops",
+    description:
+      "A personal project that aims to streamline the management of gym related operations.",
+    tech: [
+      "Sveltekit",
+      "TypeScript",
+      "Tailwind CSS",
+      "Golang",
+      "Chi",
+      "PostgreSQL",
+      "Docker",
+    ],
+    image: "/images/projects/ojt-hours-tracker.png",
+    github: "https://www.github.com/bangueco/plus-ultra",
   },
 ];
+
+export default projects;
