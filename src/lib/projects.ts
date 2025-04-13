@@ -1,11 +1,11 @@
-export interface ProjectsProps {
+export type ProjectsProps = {
   url: string;
   title: string;
   description: string;
   technologies: string[];
   repo_url: string;
   live_preview?: string;
-}
+};
 
 export const projects: Array<ProjectsProps> = [
   {
@@ -28,6 +28,15 @@ export const projects: Array<ProjectsProps> = [
       "Docker",
     ],
     repo_url: "https://www.github.com/bangueco/plus-ultra",
-    live_preview: "https://github.com/bangueco/plus-ultra/releases/tag/v1.2.11",
+    live_preview: "https://github.com/bangueco/plus-ultra/releases/tag/v1.2.13",
+  },
+  {
+    url: "/images/projects/ojt-hours-tracker.png",
+    title: "OJT Hours Tracker",
+    description:
+      "A simple web application that i developed during my internship to help my fellow classmates/students on tracking their own rendered hours in OJT.",
+    technologies: ["Next.JS", "Tailwind CSS", "Supabase"],
+    repo_url: "https://github.com/soapermanwun/ojt-hours-tracker",
+    live_preview: "https://ojt-hours-tracker.vercel.app/",
   },
 ];
