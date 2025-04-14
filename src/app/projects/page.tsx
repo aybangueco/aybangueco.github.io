@@ -67,8 +67,8 @@ export default function Projects() {
           </p>
           <h1 className="text-3xl md:text-4xl font-bold">Projects</h1>
           <p className="text-sm text-muted-foreground">
-            A collection of things I've built — personal, academic, or just for
-            fun.
+            A collection of things I&apos;ve built — personal, academic, or just
+            for fun.
           </p>
         </div>
 

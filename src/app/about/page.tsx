@@ -17,9 +17,9 @@ export default function About() {
         <div className="bg-muted/50 rounded-2xl p-6 shadow-md">
           <h2 className="text-xl font-semibold mb-2">👋 About Me</h2>
           <p className="text-sm md:text-base text-muted-foreground">
-            I'm a passionate developer currently completing my Bachelor of
+            I&apos;m a passionate developer currently completing my Bachelor of
             Science in Information Technology. I specialize in building
-            responsive and user-friendly web and mobile applications. I’m
+            responsive and user-friendly web and mobile applications. I&apos;m
             currently an intern gaining real-world experience while continuing
             to build personal projects and improve my skills through hands-on
             development.

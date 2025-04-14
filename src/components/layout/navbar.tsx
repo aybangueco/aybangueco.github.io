@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -29,8 +29,6 @@ export default function Navbar() {
     { label: "Contact", href: "/contact" },
   ];
 
-  const [openDropdown, setOpenDropdown] = useState<number | null>(null);
-
   const handleScroll = (): void => {
     const currentScrollY = window.scrollY;
 
@@ -57,15 +55,6 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY, visible]);
-
-  // Handle dropdown toggle
-  const toggleDropdown = (index: number): void => {
-    if (openDropdown === index) {
-      setOpenDropdown(null);
-    } else {
-      setOpenDropdown(index);
-    }
-  };
 
   return (
     <nav

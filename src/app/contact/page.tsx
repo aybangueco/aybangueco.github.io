@@ -1,4 +1,4 @@
-import { Github, Linkedin, Globe } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Contact() {
@@ -10,7 +10,7 @@ export default function Contact() {
             $ open ~/home/ivan/contact.txt
           </p>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Let's Connect
+            Let&apos;s Connect
           </h1>
           <p className="text-sm text-muted-foreground">
             Interested in collaborating or working together? Feel free to reach

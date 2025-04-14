@@ -9,7 +9,7 @@ export default function Home() {
           $ cat ~/home/ivan/me.txt
         </p>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          Hello, I'm Ivan 👋🏻
+          Hello, I&apos;m Ivan 👋🏻
         </h1>
         <p className="text-sm md:text-base text-muted-foreground">
           A passionate Software Developer based in the{" "}
