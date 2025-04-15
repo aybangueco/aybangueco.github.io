@@ -12,6 +12,9 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Justine Ivan Gueco | Portfolio",
   description: "Software Developer based from Philippines.",
+  verification: {
+    google: "BjXaHPTLo9rL0gmsdPSfAHSSSqkv3mm8gMKzAP3c2qM",
+  },
 };
 
 export default function RootLayout({
