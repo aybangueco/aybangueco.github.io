@@ -9,10 +9,10 @@ export default function Home() {
         <p className="text-xs text-muted-foreground">
           $ cat ~/home/ivan/me.txt
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
           Hello, I&apos;m Ivan 👋🏻
         </h1>
-        <p className="text-sm md:text-base text-muted-foreground">
+        <p className="text-sm text-muted-foreground">
           A passionate Software Developer based in the{" "}
           <strong>Philippines</strong> — I specialize in building and
           architecting modern web & mobile applications from scratch to
@@ -24,7 +24,7 @@ export default function Home() {
         <a href="https://buymeacoffee.com/justineivat" target="_blank">
           <Button className="text-xs md:text-sm flex items-center gap-2">
             <Coffee size={16} />
-            ./buy-me-a-coffee.sh
+            ./coffee.sh
           </Button>
         </a>
         <Link href="/contact">

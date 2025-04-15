@@ -59,7 +59,7 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border border-b-2 flex justify-center",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-2 flex justify-center",
         isScrolled
           ? "backdrop-blur-md bg-background/70 shadow-md"
           : "bg-transparent",
