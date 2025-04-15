@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     title: "Plus Ultra",
     description: "A full stack fitness mobile application capstone project.",
-    image: "/images/gymops.png",
+    image: "/projects/plus-ultra.jpg",
     github: "https://github.com/bangueco/plus-ultra",
     live: "https://github.com/bangueco/plus-ultra/releases/tag/v1.2.13",
     technologies: [
@@ -32,7 +32,7 @@ const projects: Project[] = [
     title: "Gym Ops",
     description:
       "A full stack web application for streamlining gym business related operations.",
-    image: "/images/gymops.png",
+    image: "/images/gym-ops.png",
     github: "https://github.com/soapermanwun/gym-ops",
     technologies: [
       "Sveltekit",
@@ -50,10 +50,26 @@ const projects: Project[] = [
     title: "OJT Hours Tracker",
     description:
       "A simple full stack web application for tracking rendered hours by students in OJT.",
-    image: "/images/student-toolkit.png",
+    image: "/projects/ojt-hours-tracker.png",
     github: "https://github.com/soapermanwun/ojt-hours-tracker",
     live: "https://ojt-hours-tracker.vercel.app/",
     technologies: ["Next.js", "TailwindCSS", "Shadcn", "Supabase"],
+  },
+  {
+    title: "Inventory Management System",
+    description:
+      "A full stack web application created for our school laboratory for managing items.",
+    image: "/projects/inventory-management-system.png",
+    github: "https://github.com/bangueco/inventory-system",
+    technologies: ["HTML", "CSS", "Bootstrap", "Laravel", "MySQL"],
+  },
+  {
+    title: "Kanban Board",
+    description: "A simple web application for tracking tasks.",
+    image: "/projects/kanban-board.png",
+    github: "https://github.com/bangueco/kanban-board",
+    live: "https://bangueco.github.io/kanban-board/",
+    technologies: ["Svelte", "Tailwind CSS", "Shadcn"],
   },
 ];
 
