@@ -21,7 +21,7 @@ export default function Contact() {
 
         <div className="flex justify-center gap-4 flex-wrap">
           <a
-            href="https://aybangueco.vercel.app/"
+            href="https://github.com/aybangueco"
             target="_blank"
             rel="noopener noreferrer"
           >
