@@ -33,7 +33,7 @@ const projects: Project[] = [
     description:
       "A full stack web application for streamlining gym business related operations.",
     image: "/images/gym-ops.png",
-    github: "https://github.com/soapermanwun/gym-ops",
+    github: "https://github.com/aybangueco/gym-ops",
     technologies: [
       "Sveltekit",
       "Tailwind CSS",
@@ -51,7 +51,7 @@ const projects: Project[] = [
     description:
       "A simple full stack web application for tracking rendered hours by students in OJT.",
     image: "/projects/ojt-hours-tracker.png",
-    github: "https://github.com/soapermanwun/ojt-hours-tracker",
+    github: "https://github.com/aybangueco/ojt-hours-tracker",
     live: "https://ojt-hours-tracker.vercel.app/",
     technologies: ["Next.js", "TailwindCSS", "Shadcn", "Supabase"],
   },
